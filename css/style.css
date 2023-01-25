@@ -1088,8 +1088,9 @@ textarea:focus {
 
 footer {
   background-color: var(--color-dark-main);
-  padding: var(--section-padding) 0;
+  padding: var(--section-padding) 0 0 0;
   color: var(--color-light-main);
+  position: relative;
 }
 
 footer .logo-area {
@@ -1226,6 +1227,67 @@ footer button:hover {
   background-color: var(--color-light-main);
 }
 
+footer .subfooter {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background-color: rgba(81, 77, 77, 0.3);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+footer .subfooter p {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+footer .subfooter a:nth-child(3) {
+  display: inline-block;
+  color: var(--color-main) !important;
+}
+footer .subfooter .copyright {
+  width: max-content;
+}
+footer .subfooter .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .subfooter .links ul {
+  display: flex;
+  align-items: center;
+}
+footer .subfooter .links ul li {
+  position: relative;
+}
+footer .subfooter .links ul a {
+  margin: 0 1rem;
+}
+footer .subfooter .links ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: var(--color-main);
+  top: 50%;
+  right: -0.3rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  footer .subfooter .container {
+    flex-direction: column;
+  }
+}
 /* animations */
 *.animation-up1_2 {
   animation: FadeInUp 1.2s ease-in-out 0s 1 normal forwards;

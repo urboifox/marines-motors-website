@@ -19,6 +19,12 @@ const textImage = document.querySelector(`#about .benifits .image-holder`);
 const textLis = Array.from(document.querySelectorAll(`#about .benifits ul li`));
 const aboutMainImage = document.getElementById(`aboutMainImage`);
 
+const deployYear = document.getElementById(`deployYear`);
+
+let date = new Date().getFullYear();
+deployYear.appendChild(document.createTextNode(date));
+deployYear.style.cssText = `transform: translateY(1px)`;
+
 const servicesCardsOdd = Array.from(
   document.querySelectorAll(`#services .cards .card:nth-child(odd)`)
 );
