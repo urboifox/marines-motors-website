@@ -264,7 +264,7 @@ section {
 #nav .nav-links #linksHolder a:hover {
   color: var(--color-main);
 }
-#nav .nav-links a.talk {
+#nav .nav-links a.last {
   color: var(--color-dark-main);
   background-color: var(--color-main);
   padding: 1rem 2rem !important;
@@ -273,14 +273,14 @@ section {
   -moz-transition: 400ms;
   -ms-transition: 400ms;
   -o-transition: 400ms;
-  margin-left: 3rem;
+  margin-left: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
-#nav .nav-links a.talk::after {
+#nav .nav-links a.last::after {
   display: none;
 }
-#nav .nav-links a.talk:hover {
+#nav .nav-links a.last:hover {
   background-color: var(--color-dark-main);
   color: var(--color-text-light) !important;
 }
@@ -391,13 +391,13 @@ section {
   #nav .nav-links #linksHolder a.active {
     color: var(--color-dark-main);
   }
-  #nav .nav-links a.talk {
+  #nav .nav-links a.last {
     background-color: transparent;
     text-transform: capitalize;
     padding: 1.2rem 0 !important;
     margin: 0;
   }
-  #nav .nav-links a.talk:hover {
+  #nav .nav-links a.last:hover {
     color: var(--color-main) !important;
   }
   #nav .nav-links a,
