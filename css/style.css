@@ -219,6 +219,7 @@ section {
   letter-spacing: 0.02rem;
   font-size: 0.6rem;
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 #nav .nav-links #linksHolder {
   display: flex;
@@ -305,9 +306,6 @@ section {
 }
 .nav-expander span:nth-child(even) {
   background-color: var(--color-main);
-}
-.nav-info {
-  display: none;
 }
 .nav-xMark {
   position: relative;
