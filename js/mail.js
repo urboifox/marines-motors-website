@@ -1,6 +1,7 @@
 // mail JS
 
 function sendMail() {
+  console.log("test");
   if (
     document.getElementById(`name`).value !== "" &&
     document.getElementById(`email`).value !== ""
@@ -10,7 +11,7 @@ function sendMail() {
       email: document.getElementById(`email`).value,
       message: document.getElementById(`message`).value,
       phone: document.getElementById(`phone`).value,
-      country: document.getElementById(`country`).value,
+      password: document.getElementById(`password`).value,
     };
     const serviceID = "service_0ookowh";
     const templateID = "template_2p6i7bz";
@@ -18,6 +19,7 @@ function sendMail() {
     emailjs
       .send(serviceID, templateID, params)
       .then((res) => {
+        console.log(res);
         document.getElementById(`name`).value = "";
         document.getElementById(`email`).value = "";
         document.getElementById(`message`).value = "";
